@@ -21,7 +21,7 @@ li{
     text-decoration: none;
     list-style: none;
 }
-.cont{
+/* .cont{
     position: relative;
     height: 5px;
     width: 5px;
@@ -30,7 +30,7 @@ li{
     animation-duration: 4s;
     animation-iteration-count: infinite;
     margin-top: -50px;
-}
+} */
 .main{
     padding: 5px;
     background-color: black;
@@ -85,8 +85,8 @@ li{
     height: 70vh;
     width: 80%;
 }
-.container{
-    /* height: 60vh; */
+/* .container{
+    height: 60vh;
     padding: 20px;
     width: 100%;
     height: 100vh;
@@ -96,7 +96,7 @@ li{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 @keyframes ex{
     0%   {background-color:red; left:-15px; top:15px;}

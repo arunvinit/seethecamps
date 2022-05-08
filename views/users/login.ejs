@@ -1,6 +1,7 @@
 <% layout("layouts/boilerplate") %>
-<h2 style="text-align: center;" class="mb-3">Login Form</h2>
-<form action="/login" style="margin: auto;" class="validated-form" novalidate method="POST">
+<div class="loginform">
+  <h2 style="text-align: center;" class="mb-3">Login Form</h2>
+<form action="/login" style="margin: auto;" class="validated-form" novalidate method="POST" >
   <div class="mb-3">
     <label for="username" class="form-label">UserName</label>
     <input
@@ -28,3 +29,4 @@
   </div>
   <button class="btn btn-success">Login</button>
 </form>
+</div>
