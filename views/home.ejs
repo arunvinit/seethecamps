@@ -16,7 +16,21 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a73656;
+  border-radius: 10px;
+}
+
 .nav{
+    background-color:#fec7d7;
     display: flex;
     justify-content: space-around;
     height: 8vh;
@@ -68,6 +82,9 @@ li{
     transition: all 0.3s ease;
 }
 .main{
+    background-color:#fec7d7;
+    border-bottom-left-radius:10%;
+    border-bottom-right-radius:10%;
     color: black;
     height: 97vh;
     width: 100%;
@@ -101,6 +118,7 @@ li{
      padding-right: 20px;
      font-weight: bold;
  }
+ 
  .btns button:hover{
     transform: scale(1.05);
     transition: all 0.2s;
@@ -140,6 +158,7 @@ li{
     justify-content: space-evenly;
     margin-top: 20px;
     width: 80%;
+    
 }
 .ac1 img{
     height: 150px;
@@ -158,8 +177,9 @@ li{
 footer{
     text-align: center;
     margin-top: 40px;
-    background-color: rgba(0, 0, 0,0.5);
+    background-color: rgba(0, 0, 0,1);
     height: 8vh;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,7 +257,6 @@ footer{
         align-items: center;
         justify-content: center;
         height: 100vh;
-        margin-top: 40px;
         width: 100%;
     }
     .img{
@@ -257,6 +276,7 @@ footer{
     .content{
         width: 97%;
         text-align: center;
+        margin-top: 40px;
         /* position: absolute; */
         /* top: 30%; */
     }
@@ -329,7 +349,7 @@ footer{
     </div>
 
     <div style="margin: auto; text-align: center;color: #003566;">
-        <h1>Explore the beautiful world</h1>
+        <!-- <h1>Explore the beautiful world</h1> -->
         <h3 style="margin-top: 20px;">Upload here let others see and visit those places :) </h3>
         <hr style="height: 5px;background-color:#14213d; border: none; width: 25%; margin: auto;  margin-top: 10px; ">
         <h1 style="margin-top: 40px;">What we offer </h1>

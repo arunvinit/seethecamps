@@ -1,4 +1,16 @@
 <% layout('layouts/boilerplate')%>
+<style>
+    .mainform{
+        width: 60%;
+        margin: auto;
+    }
+
+    @media screen and (max-width:761px) {
+        .mainform{
+            width: 95%;
+        }
+    }
+</style>
     <!-- <h1>Edit campground</h1>
     <form action="/campground/<%=camp._id%>?_method=PUT" method="post">
         <label for="title">Title </label>
@@ -11,7 +23,7 @@
 
     <div class="row">
         <h1 class="text-center">Edit Campground</h1>
-        <div class="col-6 offset-3">
+        <div class="mainform">
             <form action="/campground/<%=camp._id%>?_method=PUT" method="post" novalidate class="validated-form" enctype="multipart/form-data">
                 <div class="mb-3">
                 <label for="title" class="form-label">Title </label>

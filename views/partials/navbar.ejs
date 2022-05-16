@@ -161,7 +161,7 @@ li{
  }
  .btns button{
      cursor: pointer;
-     padding: 10px;
+     padding: 5px;
      border: 1px solid white;
      color: white;
      background-color: #1bc44b;
@@ -217,7 +217,11 @@ li{
         transform: translateY(0%);
     }
 }
-
+@media screen and (max-width: 1200px) and (min-width: 750px){
+    .links{
+        width: 90%;
+    }
+}
 
 @media screen and ( max-width:750px) {
     body{
@@ -225,9 +229,7 @@ li{
     }
     .links{
         /* display: none; */
-        position: absolute;
-        opacity: 0;
-        pointer-events: none;
+        display: none;
     }
     .links button{
         
@@ -285,14 +287,7 @@ li{
         /* top: 30%; */
     }
 }
-@media screen and (max-width: 1200px) and (min-width: 750px){
-    .nav{
-      display: flex;
-    }
-    .links{
-        width: 70%;
-    }
-}
+
 
 .nav-active{
     position: absolute;

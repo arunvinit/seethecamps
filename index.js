@@ -37,7 +37,6 @@ async function main() {
     console.log("connection open");
 }
 const app = express();
-
 app.engine('ejs', ejsMate)
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'))
