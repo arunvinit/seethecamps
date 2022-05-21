@@ -33,7 +33,7 @@ module.exports.login=(req,res)=>{
     // console.log(`current user ${req.user.username}`);
     const redirectUrl=req.session.returnTo || "/campground";
     delete req.session.returnTo
-    res.redirect(redirectUrl)
+    res.redirect("/")
 }
 
 module.exports.logout=(req,res)=>{
