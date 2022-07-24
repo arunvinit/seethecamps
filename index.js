@@ -80,8 +80,15 @@ app.use((req, res, next) => {
 
 app.use("/",userRoute)
 
-app.get('/', (req, res) => {
-    res.render('home')
+app.get('/', async(req, res) => {
+    const campground=await Campground.find();
+    const campgrounds=[];
+    let i=0;
+    while(i<campground.length && i<3){
+        campgrounds.push(campground[i]);
+        i++;
+    }
+    res.render('home',{campgrounds});
 });
 app.get('/campground', catchAsync(campgrounds.index));
 
